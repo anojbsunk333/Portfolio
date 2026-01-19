@@ -6,7 +6,7 @@ export default function Third(){
         </h1>
 
         <div className="grid grid-cols-3 m-2 p-2">
-          <div>
+          <div className="border-2 p-5 ">
             <h2 className="mt-2">
               <strong>UI Development</strong>
             </h2>

@@ -1,48 +1,42 @@
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 export default function Hero() {
   return (
-    <div className=" ml-5 pl-10 p-8">
-      <h1 className="text-[82px] text-[#353534] leading-none ">
-        <strong> Frontend Developer</strong> specializing in React, Next.js, and
-        TypeScript.
-      </h1>
-      <h3 className="text-[29px] mt-5 text-[#4a4a46]">
-        Experienced in building scalable SPAs, implementing design systems, and
-        optimizing web performance. Passionate about clean architecture,
-        component reusability, and staying current with emerging frontend
-        technologies and best practices.
-      </h3>
-      <h1 className=" text-[30px] text-[#4a4a46] mt-10 font-bold">
-        <strong> Frontend Developer</strong>
-      </h1>
-      <p className="text-[22px] text-[#959490] py-10">
-        I'm a Frontend Developer specializing in building exceptional digital
-        experiences. My expertise lies in translating complex requirements into
-        intuitive, responsive interfaces using modern web technologies like
-        React, TypeScript, and modern JavaScript.
-        <br />
-
-        
-          My development approach combines technical precision with user-centric
-          design. I focus on creating applications that are not only visually
-          appealing but also performant, accessible, and maintainable. Whether
-          it's optimizing Core Web Vitals, implementing complex state
-          management, or crafting reusable component libraries, I enjoy solving
-          challenging frontend problems.
-        
-
-        <br />
-
-        With a strong foundation in HTML5, CSS3, and JavaScript (ES6+), I build
-        scalable applications using React ecosystem tools including Next.js,
-        Redux, and various testing frameworks. I'm passionate about staying
-        current with emerging technologies and best practices in the
-        ever-evolving frontend landscape. <br />
-        Beyond coding, I believe in collaborative development, clear
-        communication with cross-functional teams, and continuous learning. I
-        thrive in environments where I can contribute to meaningful projects
-        while growing as a developer and helping others grow alongside me.
-      </p>
+    <div className=" bg-black h-screen flex justify-center items-center ">
+      
+      <div>
+        <div className=" absolute ">
+          <h1 className="text-white relative heading text-[90px] font-bold  -translate-y-20  -translate-x-45 ">
+            <div className="absolute inset-0 blur-[80px] opacity-80 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+            <span className="relative z-50"> 𝒜𝒩𝒪𝒥 𝐵𝐼𝒮𝐻𝒰𝒩𝒦𝐸</span>
+          </h1>
+        </div>
+        <Icon
+          icon={"devicon:react-wordmark"}
+          className="size-12 absolute left-40 top-40"
+        />
+        <Icon
+          icon={"devicon:nodejs-wordmark"}
+          className="size-20 absolute bottom-30 right-50"
+        />
+        <Icon
+          icon={"arcticons:easy-coder"}
+          className="size-20 text-white absolute right-68 top-60"
+        />
+        <Icon
+          icon={"fluent-emoji-flat:laptop"}
+          className="size-15 text-white absolute left-70 bottom-40"
+        />
+        <Icon
+          icon={"fa7-solid:bugs"}
+          className="size-20 text-green-900 absolute right-10 top-20"
+        />
+        <h2 className="text-white text-3xl mt-10">
+          ---------- <strong>Frontend Developer</strong> ----------
+        </h2>
+        <h3 className="px-40 text-amber-100">Where Design Meets Code</h3>
+      </div>
     </div>
   );
 }
+//

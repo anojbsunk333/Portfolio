@@ -24,3 +24,62 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.animate {
+  animation: ghumirakhne 2s linear infinite;
+}
+
+@keyframes ghumirakhne {
+  0% {
+    transform: rotate(360deg);
+    /* background: #000;
+    transform: translateY(-100px);
+    /border-radius: 200px;  */
+  }
+
+  75% {
+    /* transform: translate(100px, 100px); */
+  }
+
+  50% {
+    /* transform: translateY(0px); */
+    /* border-radius: 0px; */
+    scale: 0;
+    /* outline: 20px solid black; */
+  }
+}
+
+.animate2 {
+  animation: khatraanimation 1s linear infinite;
+}
+
+@keyframes khatraanimation {
+  25% {
+    justify-content: start;
+    align-items: center;
+  }
+  50% {
+    justify-content: end;
+    align-items: end;
+  }
+  75% {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.auto-scroll {
+  animation: ghisarne 4s linear infinite;
+  transform: translateX(50%);
+}
+
+@keyframes ghisarne {
+  50% {
+    transform: translateX(50%);
+  }
+}
+
+
+.heading {
+  
+}
